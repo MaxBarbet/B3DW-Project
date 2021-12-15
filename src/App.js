@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
 import Home from './component/home';
-import  from './component/';
+import fred from './component/';
 import  from './component/';
 import  from './component/';
 import  from './component/';
