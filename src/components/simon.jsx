@@ -4,4 +4,4 @@ function Simon (){
  return <h1>Simon</h1>
 }
  
-export default Home;
+export default Simon;

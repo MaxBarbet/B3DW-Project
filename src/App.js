@@ -5,10 +5,8 @@ import Home from './components/home';
 import Fred from './components/fred';
 import Simon from './components/simon';
 import Emma from './components/emma';
-import Mwan_lou from './components/mwan_lou';
+import Mwan_lou from './components/mwanLou';
 import './App.css';
-
-
  
 class App extends Component {
   render() {
@@ -20,16 +18,16 @@ class App extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/fred"></Link>
+                <Link to="/fred">Fred</Link>
               </li>
               <li>
-                <Link to="/simon"></Link>
+                <Link to="/simon">Simon</Link>
               </li>
               <li>
-                <Link to="/emma"></Link>
+                <Link to="/emma">Emma</Link>
               </li>
               <li>
-                <Link to="/mwan-lou"></Link>
+                <Link to="/mwan-lou">Mwan-lou</Link>
               </li>
             </ul>
            <Routes>
