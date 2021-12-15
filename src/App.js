@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
-import Home from './components/home';
-import Fred from './components/fred';
-import Simon from './components/simon';
-import Emma from './components/emma';
-import Mwan_lou from './components/mwanLou';
+import Home from './components/home/home';
+import Fred from './components/fred/fred';
+import Simon from './components/simon/simon';
+import Emma from './components/emma/emma';
+import Mwan_lou from './components/mwanLou/mwanLou';
 import './App.css';
  
 class App extends Component {
@@ -14,19 +14,19 @@ class App extends Component {
        <Router>
            <div className="App">
             <ul className="App-header">
-              <li>
+              <li className="App-link">
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li className="App-link">
                 <Link to="/fred">Fred</Link>
               </li>
-              <li>
+              <li className="App-link">
                 <Link to="/simon">Simon</Link>
               </li>
-              <li>
+              <li className="App-link">
                 <Link to="/emma">Emma</Link>
               </li>
-              <li>
+              <li className="App-link">
                 <Link to="/mwan-lou">Mwan-lou</Link>
               </li>
             </ul>
