@@ -1,9 +1,8 @@
 import React from 'react';
  
-function Home (){
+function Mwan_lou  (){
  return <h1>Hello World!</h1>
 }
  
-export default Home;
-
+export default Mwan_lou;
 
