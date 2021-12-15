@@ -1,7 +1,7 @@
 import React from 'react';
  
-function Home (){
+function Emma (){
  return <h1>Hello World!</h1>
 }
  
-export default Home;
+export default Emma;
