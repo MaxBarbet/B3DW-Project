@@ -3,7 +3,7 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
 import Home from './component/home';
 import Simon from './component/';
-import  from './component/';
+import Emma from './component/';
 import  from './component/';
 import  from './component/';
 import  from './component/';
