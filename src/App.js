@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
 import Home from './components/home';
-// import Fred from './components/fred';
-// import Simon from './components/simon';
-// import Emma from './components/emma';
-// import Mwan_lou from './components/mwan_lou';
+import Fred from './components/fred';
+import Simon from './components/simon';
+import Emma from './components/emma';
+import Mwan_lou from './components/mwan_lou';
 import './App.css';
  
 class App extends Component {
