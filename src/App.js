@@ -3,8 +3,9 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 
 import Home from './component/home';
 import fred from './component/';
-import  from './component/';
-import  from './component/';
+import Simon from './component/';
+import Emma from './component/';
+import mwan-lou from './component/';
 import  from './component/';
 import  from './component/';
 import './App.css';
