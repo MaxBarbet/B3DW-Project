@@ -1,0 +1,85 @@
+import React, { useEffect, useRef, useState } from 'react';
+import Image from './img';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+ 
+function Alps (){
+    function importAll(r) {
+        return r.keys().map(r);
+      }
+      const images = importAll(require.context('../assets/img', false, /\.(png|jpe?g|svg)$/));
+      const [img, setImage] = useState({
+          src:images[2],
+      });
+
+
+
+      const el = useRef();
+      const el2 = useRef();
+      const el3 = useRef();
+      const q = gsap.utils.selector(el);
+      const r = gsap.utils.selector(el2);
+      const s = gsap.utils.selector(el3);
+      
+      useEffect(() => {
+        // Target any descendant with the class of .box - no matter how far down the descendant tree. Uses el.current.querySelectorAll() internally
+        gsap.from(q(".image"), {
+          y: 100,
+          opacity:0,
+          scrollTrigger:{
+              trigger:q(".image")
+          },
+          stagger: 0.33,
+        });
+        gsap.from(r(".image"), {
+            y: 100,
+            opacity:0,
+            scrollTrigger:{
+                trigger:r(".image")
+            },
+            stagger: 0.33,
+          });
+          gsap.from(s(".image"), {
+            y: 100,
+            opacity:0,
+            scrollTrigger:{
+                trigger:s(".image")
+            },
+            stagger: 0.33,
+          });
+      }, []);
+
+
+
+ return (
+     <section className='alps'>
+        <section className='hero'>
+            <div className='text'>
+                <h2>Alps</h2>
+                <p className='bold'>Photpographie</p>
+            </div>
+            <div>
+                <Image src={images[2]} className='ImagePage' />
+            </div>
+        </section>
+        <section className='sectionImage' ref={el}>
+            <Image src={images[2]} className='image'/>
+            <Image src={images[2]} className='image'/>
+        </section>
+        <section className='sectionImage' ref={el2}>
+            <Image src={images[2]} className='image'/>
+            <Image src={images[2]} className='image'/>
+        </section>
+        <section className='sectionImage' ref={el3}>
+            <Image src={images[2]} className='image'/>
+            <Image src={images[2]} className='image'/>
+        </section>
+    </section>
+    )
+}
+ 
+export default Alps;
