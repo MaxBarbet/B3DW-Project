@@ -133,20 +133,22 @@ function HomeSimon (){
                 <div className="content"  ref={el => h1 =el}>
                 <div className='imgLink' >
                         <p>01</p>
-                        <Link to="/simon/alps">
+                        <Link to="/simon/tbl">
                         <p onMouseOver={() => showImage(1)} onMouseOut={() => hideImage(1)} 
                         className='img'
                         >Tales of blue light</p></Link>
                 </div>
                 <div className='imgLink'>
                     <p>02</p>
+                    <Link to="/simon/iceland">
                     <p onMouseOver={() => showImage(2)} onMouseOut={() => hideImage(2)} 
-                    className='img'>Icelandic Path</p>
+                    className='img'>Icelandic Path</p></Link>
                 </div>
                 <div className='imgLink'>
                     <p>03</p>
+                    <Link to="/simon/alps">
                     <p onMouseOver={() => showImage(3)} onMouseOut={() => hideImage(3)} 
-                    className='img'>My alps</p>
+                    className='img'>My alps</p></Link>
                 </div>
                 </div>
                 <img src={img.src} alt="" className="img1" ref={el => cursor = el} />

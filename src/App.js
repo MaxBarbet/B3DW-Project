@@ -5,6 +5,8 @@ import Home from './components/home/home';
 import Fred from './components/fred/fred';
 import Simon from './components/simon/simon';
 import Alps from './components/simon/pages/alps';
+import Tbl from './components/simon/pages/tbl';
+import Iceland from './components/simon/pages/iceland';
 import ScrollToTop from './ScrollToTop';
 import Emma from './components/emma/emma';
 import Mwan_lou from './components/mwanLou/mwanLou';
@@ -38,6 +40,8 @@ class App extends Component {
                   <Route exact path='/fred' element={< Fred />}></Route>
                   <Route exact path='/simon' element={< Simon />}></Route>
                   <Route exact path='/simon/alps' element={< Alps />}></Route>
+                  <Route exact path='/simon/tbl' element={< Tbl />}></Route>
+                  <Route exact path='/simon/iceland' element={< Iceland />}></Route>
                   <Route exact path='/emma' element={< Emma />}></Route>
                   <Route exact path='/mwan-lou' element={< Mwan_lou />}></Route>
             </Routes>

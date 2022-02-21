@@ -11,13 +11,10 @@ function Alps (){
     function importAll(r) {
         return r.keys().map(r);
       }
-      const images = importAll(require.context('../assets/img', false, /\.(png|jpe?g|svg)$/));
+      const images = importAll(require.context('../assets/img/alps', false, /\.(png|jpe?g|svg)$/));
       const [img, setImage] = useState({
           src:images[2],
       });
-
-
-
       const el = useRef();
       const el2 = useRef();
       const el3 = useRef();
@@ -67,16 +64,16 @@ function Alps (){
             </div>
         </section>
         <section className='sectionImage' ref={el}>
-            <Image src={images[2]} className='image'/>
+            <Image src={images[0]} className='image'/>
             <Image src={images[2]} className='image'/>
         </section>
         <section className='sectionImage' ref={el2}>
-            <Image src={images[2]} className='image'/>
-            <Image src={images[2]} className='image'/>
+            <Image src={images[3]} className='image'/>
+            <Image src={images[4]} className='image'/>
         </section>
         <section className='sectionImage' ref={el3}>
-            <Image src={images[2]} className='image'/>
-            <Image src={images[2]} className='image'/>
+            <Image src={images[5]} className='image'/>
+            <Image src={images[6]} className='image'/>
         </section>
     </section>
     )

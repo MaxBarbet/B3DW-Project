@@ -91,7 +91,16 @@ h2{
 
 
 
+.alps {
+    background-color: #D2DAEB;
+}
 
+.alps.iceland{
+    background-color: #EBD6CA;
+}
+.alps.tbl{
+    background-color: #C7D8EA;
+}
 .alps .hero{
     flex-direction: row;
     justify-content: space-between;
@@ -112,7 +121,7 @@ h2{
 
 .alps .sectionImage> div{
     width: 45%;
-    height: 90%;
+    height: 80%;
 }
 
 .alps .sectionImage img{
