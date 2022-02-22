@@ -4,9 +4,9 @@ import Logo from './logo';
 const Title = () => {
     return (
         <div className='title-component'>
-            <div className='logo-container'>
-             <Logo/ >
-            </div>
+            <a href="https://www.fredho.fr/" className='logo-container'>
+                <Logo/ >
+            </a>
             <div className='bg-black rounded-max white number'>
                 <p className='lores-12 bold'>001</p>
             </div>

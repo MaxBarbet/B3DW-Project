@@ -97,28 +97,58 @@ h4,h5,h6,p{
 }
 /* Body */
 .body{
+    padding: 2%;
+}
+.body::before{
+    content: '';
     background-image: url('./assets/paper.jpg') ;
     background-size: cover;
     height: 100vh;
-    padding: 2%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0.35;
+    position: absolute;
+}
+/* HEAD */
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+h1{
+    margin-top: 0.5%;
+    max-height: 60px;
 }
 /* Title components */
 .title-component{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -1px;
-    left: -1px;
+    top: -2px;
+    left: -2px;
+    max-height: 45px;
 }
 .logo-container{
     border: black solid 2px;
     border-radius: 12px;
     padding: 0.5% 1%;
-    width: 15%;
+    width: 200px;
     display: inline;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.logo-container:hover .logo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(105%);
+    transition: 0.3s;
+}
+.logo-container:hover{
+    background-color: black;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .logo-container>div{
     display: flex;
@@ -126,14 +156,28 @@ h4,h5,h6,p{
     align-items: center;
     justify-content: center;
 }
+.logo{
+    padding: 5%;
+}
 .number{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0% 2%;
+    max-height: 50px;
+    padding: 0% 8%;
     margin-left: 40px;
+    border: #2C2C2C 2px solid;
     
+}
+.number:hover{
+    background-color: transparent;
+    transition: 0.3s;
+
+}
+.number:hover p{
+    color: #2C2C2C;
+    transition: 0.3;
 }
 .number>p{
     font-size: 2.5rem!important;
@@ -141,12 +185,59 @@ h4,h5,h6,p{
 .number::before{
     content: '';
     border: #2C2C2C solid 1px;
+    background-color: #2C2C2C;
     width: 40px;
     position: absolute;
-    left: 17.2%;
+    left: 47%;
 }
 /* Info component */
+.info-title{
+    padding: 5% 0;
+}
 .info-title::before,.info-title::after{
     content: '###';
     vertical-align: top;
+}
+.meta-info{
+    border: black solid 2px;
+    position: relative;
+    left: -2px;
+    width: 100%;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 5% 0;
+}
+.info-img img{
+    width: 75%;
+}
+.info-img{
+    max-height: 150px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: grid;
+    grid-gap: 7%;
+    grid-column: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10% 0;
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0px 4px 6px;
+    border: black 2px solid;
+    width: 100%;
+    position: relative;
+    left: -2px;
+    top: -1px;
+}
+.info-img::-webkit-scrollbar{
+    display: none;
+}
+.info-card{
+    border: black solid 2px;
+    border-radius: 12px;
+    max-width: 20%;
+    position: relative;
+    top: -2px;
+    left: 2px;
+}
+.info-subtitle{
+    padding: 3% 0;
 }
