@@ -228,6 +228,12 @@ h1{
     left: -2px;
     top: -1px;
 }
+.info-img:hover{
+    cursor: grab;
+}
+.info-img:active{
+    cursor: grabbing;
+}
 .info-img::-webkit-scrollbar{
     display: none;
 }

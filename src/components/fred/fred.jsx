@@ -4,6 +4,7 @@ import './styles.css';
 import Title from './my-components/title';
 import Info from './my-components/info';
 import Animation from './my-components/animation';
+import Roll_video from './assets/Roll-clean.mp4'
  
 function Fred (){
  return <div className='body'>
@@ -16,6 +17,9 @@ function Fred (){
                 </div>
                 <div className='animation-card'>
                     <Animation/ >
+                </div>
+                <div>
+                    <video src={Roll_video} width={400} height={400} loop autoPlay></video>
                 </div>
             </div>
          </div>

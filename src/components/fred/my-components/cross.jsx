@@ -4,7 +4,7 @@ import cross_image from './../assets/cross.svg'
 const Cross = () => {
     return (
         <div>
-            <img src={cross_image} alt="croix noir" />
+            <span className='bold'>&#8251;</span>
         </div>
     );
 };
