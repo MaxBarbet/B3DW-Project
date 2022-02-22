@@ -5,7 +5,7 @@ import Home from './components/home/home';
 import Fred from './components/fred/fred';
 import Simon from './components/simon/simon';
 import Emma from './components/emma/emma';
-import Mwan_lou from './components/mwanLou/mwanLou';
+import Mwanlou from './components/mwanLou/mwanLou';
 import './App.css';
  
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
                  <Route exact path='/fred' element={< Fred />}></Route>
                  <Route exact path='/simon' element={< Simon />}></Route>
                  <Route exact path='/emma' element={< Emma />}></Route>
-                 <Route exact path='/mwan-lou' element={< Mwan_lou />}></Route>
+                 <Route exact path='/mwan-lou' element={< Mwanlou />}></Route>
           </Routes>
           </div>
        </Router>

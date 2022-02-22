@@ -1,8 +1,8 @@
 import React from 'react';
  
-function Mwan_lou  (){
+function Mwanlou  (){
  return <h1>Mwan lou</h1>
 }
  
-export default Mwan_lou;
+export default Mwanlou;
 

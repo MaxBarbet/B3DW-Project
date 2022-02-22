@@ -3,6 +3,7 @@ import Typekit from 'react-typekit';
 import './styles.css';
 import Title from './my-components/title';
 import Info from './my-components/info';
+import Animation from './my-components/animation';
  
 function Fred (){
  return <div className='body'>
@@ -12,6 +13,9 @@ function Fred (){
                     <Title/ >
                     <h1 className='lores-12 bold uppercase'>- Fredho animation -</h1>
                     <Info/ >
+                </div>
+                <div className='animation-card'>
+                    <Animation/ >
                 </div>
             </div>
          </div>

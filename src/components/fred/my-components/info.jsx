@@ -1,6 +1,7 @@
 import React from 'react';
 import Cross from './cross';
-import banniere from './../assets/banniere.png'
+import banniere from './../assets/banniere.png';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 const Info = () => {
     return (
@@ -15,11 +16,11 @@ const Info = () => {
                 <Cross/ >
                 <p>24 ips</p>
             </div>
-            <div className='info-img'>
-                <img src={banniere} alt="Image" />
-                <img src={banniere} alt="Image" />
-                <img src={banniere} alt="Image" />
-            </div>
+            <ScrollContainer className='info-img'>
+                <img src={banniere} alt="paysage" />
+                <img src={banniere} alt="mouton" />
+                <img src={banniere} alt="cheval" />
+            </ScrollContainer>
             <div className='info-subtitle'>
                 <h4 className="uppercase">Process</h4>
             </div>

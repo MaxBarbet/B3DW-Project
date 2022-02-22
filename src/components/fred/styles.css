@@ -98,6 +98,7 @@ h4,h5,h6,p{
 /* Body */
 .body{
     padding: 2%;
+    scroll-behavior: smooth;
 }
 .body::before{
     content: '';
@@ -240,4 +241,28 @@ h1{
 }
 .info-subtitle{
     padding: 3% 0;
+}
+/* Animation component */
+.logo-gif{
+    width: 50%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(111deg) brightness(97%) contrast(92%);
+
+}
+.animation-card{
+    border: black 2px solid;
+    border-radius: 0 12px 12px 0;
+    padding: 3% 1%;
+    max-width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+.animation-card:hover{
+    background-color: black;
+    transition: 0.3s;
+
+}
+.animation-card:hover .logo-gif{
+    filter: none;
+    transition: 0.3s;
 }
