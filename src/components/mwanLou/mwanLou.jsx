@@ -110,7 +110,9 @@ function Mwan_lou  (){
                  <div className='page6'>
              <h2>Contacter-moi !</h2>
              <img src={oiseau}  className='oiseau' alt=""/>
+             <img src={oiseau}  className='oiseau' alt=""/>
              <p><a className='email'  href="mailto:mwan-loulou.ibrahimmahazi@outlook.com" target="_blank">mwan-loulou.ibrahimmahazi.com</a></p>
+             <p className='num'>06 51 36 49 98</p>
              </div>
              </Animator>
          </ScrollPage>     
