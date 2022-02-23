@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from './img';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +12,7 @@ function Alps (){
     function importAll(r) {
         return r.keys().map(r);
       }
+      let history = useNavigate();
       const images = importAll(require.context('../assets/img/alps', false, /\.(png|jpe?g|svg)$/));
       const [img, setImage] = useState({
           src:images[2],
@@ -75,6 +77,9 @@ function Alps (){
             <Image src={images[5]} className='image'/>
             <Image src={images[6]} className='image'/>
         </section>
+        <div className='goBack'>
+            <button onClick={() => history(-1)}>Back</button>
+        </div>
     </section>
     )
 }

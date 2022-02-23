@@ -50,6 +50,14 @@ h2{
     align-items: baseline;
     z-index: 999;
 }
+.imgLink a{
+    color:black;
+    text-decoration: none;
+}
+
+.content{
+    z-index: 99;
+}
 
 .imgLink .img{
     font-family: 'Iskry', serif;
@@ -58,6 +66,39 @@ h2{
     font-size: 6em;
     text-align: flex-start;
     margin-left: 30px;
+}
+
+.photoHero{
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.hoverBnW{
+    height: 80%;
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+
+.hoverBnW:hover{
+    height: 100%;
+    filter: grayscale(0%);
+}
+
+.goBack{
+   padding: 5%  0;
+}
+
+.goBack button{
+    background: none;
+    border: none;
+    font-family: 'Iskry', serif;
+    font-size: 20px;
+}
+
+.goBack button:before{
+    content: '\2190';
+    position: relative;
 }
 
 

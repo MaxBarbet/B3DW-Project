@@ -41,7 +41,7 @@ function HomeSimon (){
     const showImage = (idImage) => {
         if (idImage === 1) {
             setImage({
-                src:images[2],
+                src:images[3],
             })
             tl.to(cursor,{
                 css:{
@@ -52,7 +52,7 @@ function HomeSimon (){
         }
         if (idImage === 2) {
             setImage({
-                src:images[1],
+                src:images[2],
             })
             tl.to(cursor,{
                 css:{
@@ -124,7 +124,7 @@ function HomeSimon (){
             <section className="hero">
                 <h1 className='bold'>Welcome</h1>
                 <h2>I like Photography</h2>
-
+                {newFunction()}
                 <h2>This is my world</h2>
                 <p className='bold'>Simon Joseph</p>
             </section>
@@ -165,5 +165,11 @@ function HomeSimon (){
 
  )
 
+
+    function newFunction() {
+        return <div className='photoHero'>
+            <img src={images[1]} className="hoverBnW" />
+            </div>;
+    }
 }
 export default HomeSimon;
