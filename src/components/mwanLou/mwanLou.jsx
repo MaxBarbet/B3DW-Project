@@ -14,20 +14,12 @@ import nft from './images/nft.png'
 import qrcode from './images/qrcode.png'
 import chat from './images/chat.png'
 
-
-
-
-
-
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 const FadeUp = batch(Fade(), StickyIn(), )
 function Mwan_lou  (){
 
-
- 
  return (
      <ScrollContainer>
-
          <ScrollPage page={0}>
              <Animator>
              <div className='animation-area'>
@@ -48,10 +40,10 @@ function Mwan_lou  (){
 
          <ScrollPage page={1}>
              <Animator animation={ZoomInScrollOut}>
-             <h2 className='part_2'>Bonjour, je m'appelle Loulou <br></br>j'ai 23 ans, après avoir fait deux ans de Lience en Economie et Gestion, J'ai décidé de m'orienter dans  l'univers du digital après avoir fait des projet en autodidact  <br/>Actuellement je suis étudiante en troisième année de bachelor chef de projet digital💻   </h2>
+             <h2 className='part_2'>Bonjour, je m'appelle Mwan-Loulou <br></br>j'ai 23 ans, après avoir fait deux ans de Licence en Économie et Gestion, J'ai décidé de m'orienter dans  l'univers du digital après avoir fait des des projets
+              en autodidacte <br/>Actuellement, je suis étudiante en troisième année de bachelor chef de projet digital💻   </h2>
              </Animator>
          </ScrollPage>
-         
          <div className='page_rotate'>
 
          <ScrollPage page={2}>
@@ -79,7 +71,6 @@ function Mwan_lou  (){
              <Animator animation={MoveOut(1000, 0)}>3D</Animator>
              <Animator animation={MoveOut(-1000,0)}>SEO & SEA</Animator>
              <Animator animation={MoveIn(-1000, 0)}>Graphisme</Animator>
-
              </h2>
              </div>
          </ScrollPage>
@@ -88,8 +79,8 @@ function Mwan_lou  (){
              <Animator animation={FadeUp}>
                  
                     <div className='page4'>
-                        <h1 className='titre_projet'>Mes projet</h1>
-                        <p>Je vous presente mes differents projet que <br/>j'ai réalisé de manière professionnel ou personnelle.</p>
+                        <h1 className='titre_projet'>Mes projets</h1>
+                        <p>Je vous présente mes différents projet que <br/>j'ai réalisé de manière professionnelle ou personnelle.</p>
                         <div className='images_projet'>
           <a href="https://natureemoi-mll.netlify.app/" target="_blank"><img src={nature}  className='projet_image1' alt=""/>
           </a> 
@@ -98,7 +89,8 @@ function Mwan_lou  (){
           </div>
           </div>
              </Animator>
-         </ScrollPage> 
+         </ScrollPage>
+
          <ScrollPage page={5}>
              <div className='page5'>
              <h2 className='creation'>Mes creations 3D</h2>
@@ -118,24 +110,16 @@ function Mwan_lou  (){
                  <div className='page6'>
              <h2>Contacter-moi !</h2>
              <img src={oiseau}  className='oiseau' alt=""/>
-             <p><a className='email'  href="mailto:mwan-loulou.ibrahimmahazi@outlook.com" target="_blank">louloumwana@gmail.com</a></p>
+             <p><a className='email'  href="mailto:mwan-loulou.ibrahimmahazi@outlook.com" target="_blank">mwan-loulou.ibrahimmahazi.com</a></p>
              </div>
              </Animator>
          </ScrollPage>     
      </ScrollContainer>
-
       
  );
 
- 
-   
- 
 
 }
 
-
-
-
- 
 export default Mwan_lou;
 
