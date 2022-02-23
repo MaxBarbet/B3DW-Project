@@ -28,7 +28,7 @@ class App extends Component {
               </li>
               <li className="App-link">
                 <Link to="/mwan-lou">Mwan-lou</Link>
-              </li>
+                </li>
             </ul>
            <Routes>
                  <Route exact path='/' element={< Home />}></Route>
