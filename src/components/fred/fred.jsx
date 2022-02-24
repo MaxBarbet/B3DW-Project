@@ -22,7 +22,7 @@ function Fred (){
                     <Animation/ >
                 </div>
                 <div className='video'>
-                    <video src={Roll_video} width={400} height={400} loop autoPlay></video>
+                    <video src={Roll_video} width={400} height={400} loop controls></video>
                 </div>
                 <div className='row space-between'>
                     <div className="description">

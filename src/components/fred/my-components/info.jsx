@@ -20,7 +20,7 @@ const Info = () => {
             </div>
             <ScrollContainer className='info-img'>
                 <img src={croquis} alt="Croquis video hamster" />
-                <img src={ae_hamster} alt="after effect image hamster" />
+                <img src={ae_hamster} alt="after effect point hamster" />
                 <img src={final_hamster} alt="final cover hamster" />
             </ScrollContainer>
             <div className='info-subtitle'>

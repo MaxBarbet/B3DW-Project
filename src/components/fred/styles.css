@@ -41,6 +41,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*::selection{
+    background-color: #2C2C2C;
+    color: #DF4343;
+}
 /* fonts - typography */
 .lores-12{
     font-family: lores-12, sans-serif;
