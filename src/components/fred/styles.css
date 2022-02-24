@@ -118,6 +118,7 @@ a{
 .body{
     padding: 2%;
     scroll-behavior: smooth;
+    flex-wrap: wrap;
 }
 .body::before{
     content: '';
